@@ -8,23 +8,23 @@
     "packages": {
       "ogno-admin": {
         "git": "https://github.com/matteodem/meteor-ogno-admin.git",
-        "tag": "v0.2.5",
-        "commit": "7d3010065a1813d92f2283bae9034ceb1679ef2b"
+        "tag": "v0.2.6",
+        "commit": "5c712355f6460c52a7ac428d7e01d5d3f6602b4d"
       },
       "collection2": {
         "git": "https://github.com/aldeed/meteor-collection2.git",
-        "tag": "v0.3.3",
-        "commit": "d5c99b1c0fe30778e683175ecb0dd36529e6271e"
+        "tag": "v0.3.11",
+        "commit": "7e970671305657678e8508d8107d5e6c5e158559"
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.4.12",
-        "commit": "043d05dfb9dc8a4df23114f621cbe4f4634dab46"
+        "tag": "v0.5.1",
+        "commit": "7f2c33b0adafc4a8cc57e882b9391dd6ff2a82a7"
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
-        "tag": "v0.6.2",
-        "commit": "ce56e58b45624dce992490f3a1c10f10d3948bae"
+        "tag": "v0.7.0",
+        "commit": "05f34bc48c4cad9fdaa366c1ddcabe6980232ece"
       },
       "pagination-mini": {
         "git": "https://github.com/huyinghuan/meteor-pagination-mini.git",
@@ -33,18 +33,23 @@
       },
       "semantic-ui": {
         "git": "https://github.com/nooitaf/meteor-semantic-ui.git",
-        "tag": "v0.12.1",
-        "commit": "6d895bcec1953a1dd609541288fccc3971520d72"
+        "tag": "v0.15.2",
+        "commit": "aafa100ef174a644ebfc426c3f7ee922032e2a10"
       },
       "simple-schema": {
         "git": "https://github.com/aldeed/meteor-simple-schema.git",
-        "tag": "v0.2.31",
-        "commit": "61a690523b0371cd35492df2fd1c85bfa59393ac"
+        "tag": "v0.2.45",
+        "commit": "27a5a943a70a7376c90f18d2e2a4a122c6fc73fb"
       },
       "moment": {
         "git": "https://github.com/acreeger/meteor-moment.git",
         "tag": "v2.5.1",
         "commit": "8c9bc5d3fc96705057737cb9743d555417f6e551"
+      },
+      "blaze-layout": {
+        "git": "https://github.com/EventedMind/blaze-layout.git",
+        "tag": "v0.2.2",
+        "commit": "8bc53798fe5965669ae67c72f91829fcfdceabfd"
       }
     }
   }

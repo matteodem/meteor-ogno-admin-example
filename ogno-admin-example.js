@@ -45,7 +45,8 @@ Router.map(function () {
 // Ogno Admin Configuration
 OgnoAdmin.config({
     'prefix' : '/admin',
-    'auto' : true
+    'auto' : true,
+    'homeScreenTemplate' : 'test'
 });
 
 // Ogno Admin extend structure
