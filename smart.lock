@@ -8,8 +8,8 @@
     "packages": {
       "ogno-admin": {
         "git": "https://github.com/matteodem/meteor-ogno-admin.git",
-        "tag": "v0.2.6",
-        "commit": "5c712355f6460c52a7ac428d7e01d5d3f6602b4d"
+        "tag": "v0.2.9",
+        "commit": "47eb20db7813966c6f20593db5364b369a740f81"
       },
       "collection2": {
         "git": "https://github.com/aldeed/meteor-collection2.git",
@@ -18,8 +18,8 @@
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.5.1",
-        "commit": "7f2c33b0adafc4a8cc57e882b9391dd6ff2a82a7"
+        "tag": "v0.5.2",
+        "commit": "a02539ad73f519ef23303a62f2833f5397fc2959"
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
