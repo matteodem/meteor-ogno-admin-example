@@ -1,17 +1,5 @@
 // Cars Collection
-Cars = new Meteor.Collection2('cars', {
-    'schema' : {
-        'name' : {
-            type : String
-        },
-        'company' : {
-            type: String
-        },
-        'brand-new' : {
-            type: Boolean
-        }
-    }
-});
+Cars = new Meteor.Collection('cars');
 
 Cars.allow({
     'insert' : function () { return true; },
@@ -49,6 +37,12 @@ OgnoAdmin.config({
     'homeScreenTemplate' : 'test'
 });
 
+Meteor.users.allow({
+    'insert' : function () { return true; },
+    'update' : function () { return true; },
+    'remove' : function () { return true; }
+});
+
 // Ogno Admin extend structure
 OgnoAdmin.structure([
     {
@@ -57,5 +51,18 @@ OgnoAdmin.structure([
         'use' : 'customTemplate',
         'icon' : 'pencil',
         'menu-title' : 'Custom Menu Item'
+    },
+    {
+        'type' : 'collection',
+        'icon' : 'user',
+        'use' : {
+            'collection' : Meteor.users,
+            'schema' : {
+                'emails' : {
+                    type: [Object]
+                }
+            }
+        },
+        'menu-title' : 'Users'
     }
 ]);
