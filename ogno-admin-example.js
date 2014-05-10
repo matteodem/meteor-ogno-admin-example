@@ -30,11 +30,21 @@ Router.map(function () {
     });
 });
 
+if (Meteor.isServer) {
+    Meteor.publish('all', function () {
+        return [TestCollection.find(), Cars.find()];
+    })
+}
+
 // Ogno Admin Configuration
 OgnoAdmin.config({
     'prefix' : '/admin',
     'auto' : true,
-    'homeScreenTemplate' : 'test'
+    'homeScreenTemplate' : 'test',
+    'homeScreenTemplateGuest' : 'cant_view',
+    'waitOn' : function () {
+        return Meteor.subscribe('all');
+    }
 });
 
 Meteor.users.allow({
@@ -51,18 +61,5 @@ OgnoAdmin.structure([
         'use' : 'customTemplate',
         'icon' : 'pencil',
         'menu-title' : 'Custom Menu Item'
-    },
-    {
-        'type' : 'collection',
-        'icon' : 'user',
-        'use' : {
-            'collection' : Meteor.users,
-            'schema' : {
-                'emails' : {
-                    type: [Object]
-                }
-            }
-        },
-        'menu-title' : 'Users'
     }
 ]);
